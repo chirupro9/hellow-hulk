@@ -11,6 +11,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
     <flow name="Hellow-hulk">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hellowHulk" doc:name="HTTP"/>
         <logger message="Input logger" level="INFO" doc:name="Logger"/>
+        <logger message="Logger added" level="INFO" doc:name="Logger"/>
         <set-payload value="{
   &quot;Output&quot;:&quot;Hulk project has been created successful&quot;
 }" doc:name="Set Payload"/>
